@@ -10,6 +10,19 @@ describe("whisper function", () => {
     const result = whisper("test!");
     const lastChar = result.slice(-1);
 
-    expect(result).not.toBe("!");
+    expect(lastChar).not.toBe("!");
+  });
+  it("should be lower case", () => {
+    const result = whisper("TEST");
+
+    result.split("").forEach((letter) => {
+      expect(letter).toEqual(letter.toLowerCase());
+    });
+  });
+  it("should start with shh...", () => {
+    const result = whisper("test!");
+    const firstChars = result.slice(0, 6);
+
+    expect(firstChars).toEqual("shh...");
   });
 });
