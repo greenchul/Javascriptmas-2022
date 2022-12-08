@@ -3,5 +3,3 @@ export const getRandomNumberOfTacos = () => {
   const result = new Array(numberOfTacos).fill("🌮");
   return result;
 };
-
-console.log(getRandomNumberOfTacos());

@@ -6,6 +6,3 @@ export const whisper = (string) => {
   }`;
   return result;
 };
-
-console.log(whisper("PLEASE STOP SHOUTING."));
-console.log(whisper("MA'AM, this is a Wendy's!"));

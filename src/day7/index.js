@@ -1,4 +1,4 @@
-function altCaps(str) {
+export const altCaps = (str) => {
   return str
     .split("")
     .map((char, index) => {
@@ -9,6 +9,4 @@ function altCaps(str) {
       }
     })
     .join("");
-}
-altCaps("test");
-console.log(altCaps("When you visit Portland you have to go to VooDoo Donuts"));
+};
