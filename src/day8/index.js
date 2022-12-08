@@ -17,9 +17,3 @@ export const validTime = (str) => {
   }
   return true;
 };
-
-console.log(validTime("23:58"));
-console.log(validTime("te:58"));
-
-console.log(validTime("2358"));
-console.log(validTime("hello"));
